@@ -72,7 +72,7 @@ int HOGDescriptorGenerator(HOGDescriptor hog, vector<float>* descriptor, int typ
     switch (type) {
     case 0://Calculo de descriptores de Falsos
         for (int i = 1; i < 7; ++i) {
-            Mat img = imread("Falso" + to_string(i) + ".PNG");
+            Mat img = imread("img/Falso" + to_string(i) + ".PNG");
             cvtColor(img, img, COLOR_BGR2GRAY);
             resize(img, img, Size(128, 64));
             cv::rotate(img, img, ROTATE_90_CLOCKWISE);
@@ -81,7 +81,7 @@ int HOGDescriptorGenerator(HOGDescriptor hog, vector<float>* descriptor, int typ
         }
     case 1://Calculo de descriptores de Verdaderos
         for (int i = 1; i < 10; ++i) {
-            Mat img = imread("True" + to_string(i) + ".PNG");
+            Mat img = imread("img/True" + to_string(i) + ".PNG");
             cvtColor(img, img, COLOR_BGR2GRAY);
             resize(img, img, Size(128, 64));
             cv::rotate(img, img, ROTATE_90_CLOCKWISE);
@@ -125,7 +125,7 @@ vector<float> HOGDescriptorGenerator(char type, Mat plate) {
 
     if (type == 0) {
         for (int i = 1; i < 11; ++i) {
-            Mat img = imread("Falso" + to_string(i) + ".PNG");
+            Mat img = imread("img/Falso" + to_string(i) + ".PNG");
             cvtColor(img, img, COLOR_BGR2GRAY);
             resize(img, img, Size(128, 64));
             cv::rotate(img, img, ROTATE_90_CLOCKWISE);
@@ -135,7 +135,7 @@ vector<float> HOGDescriptorGenerator(char type, Mat plate) {
     }
     else if (type == 1) {
         for (int i = 1; i < 12; ++i) {
-            Mat img = imread("True" + to_string(i) + ".PNG");
+            Mat img = imread("img/True" + to_string(i) + ".PNG");
             cvtColor(img, img, COLOR_BGR2GRAY);
             resize(img, img, Size(128, 64));
             cv::rotate(img, img, ROTATE_90_CLOCKWISE);

@@ -30,4 +30,7 @@
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
   </ItemGroup>
+  <ItemGroup>
+    <Media Include="Vid_B.mp4" />
+  </ItemGroup>
 </Project>

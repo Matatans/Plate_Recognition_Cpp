@@ -161,7 +161,7 @@ int main() {
 
 		//Carga de modelo de patente
 
-		Mat plate_tmp = imread("tmp_plate2.PNG");
+		Mat plate_tmp = imread("img/tmp_plate2.PNG");
 		//cvtColor(plate_tmp, plate_tmp, COLOR_BGR2GRAY);
 		resize(plate_tmp, plate_tmp, Size(64, 32));
 		//threshold(plate_tmp, plate_tmp, 60, 255, THRESH_BINARY_INV);
