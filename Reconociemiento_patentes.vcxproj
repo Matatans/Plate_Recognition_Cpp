@@ -149,7 +149,8 @@
     <ClCompile Include="Plate.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Function.hpp" />
+    <ClInclude Include="Function.cpp" />
+    <ClInclude Include="Function.h" />
     <ClInclude Include="Plate.h" />
   </ItemGroup>
   <ItemGroup>

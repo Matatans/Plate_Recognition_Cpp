@@ -23,10 +23,13 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Function.hpp">
+    <ClInclude Include="Function.cpp">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
     <ClInclude Include="Plate.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Function.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
   </ItemGroup>

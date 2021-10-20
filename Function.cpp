@@ -1,33 +1,8 @@
-#pragma once
-#include <iostream>
-#include <opencv2/opencv.hpp>
-#include <opencv2/imgcodecs.hpp>
-#include <opencv2/imgproc.hpp>
-#include <opencv2/videoio.hpp>
-#include <opencv2/highgui.hpp>
-#include <opencv2/video.hpp>
-#include <vector>
-#include <numeric>
-#include "Plate.h"
+#include "Function.h"
 
 using namespace cv;
 using namespace std;
-//Prototipos de función.
 
-//Funciones variadas.
-void PrintContours(Size, vector<vector<Point> >, string);
-double euclideanDistance(Point, Point);
-
-//Funciones para detección via clasificador de media con HOG features.
-int HOGDescriptorGenerator(HOGDescriptor, vector<float>*, int, Mat);
-vector<float> HOGDescriptorGenerator(char, Mat);
-float isPlate(vector<float>, vector<float>, vector<float>);
-
-//Funciones para Match y manejo de vector de patentes.
-void addPlateToMatch(vector<Plate>&, Plate&, int);
-void addNewPlate(vector<Plate>&, Plate&);
-void matchFramePlateToPlates(vector<Plate>&, vector<Plate>&);
-void printPlateInfo(std::vector<Plate>&, cv::Mat&);
 //Declaraciones de funciones.
 
 void printPlateInfo(std::vector<Plate>& Plate, cv::Mat& imgCopy) {
